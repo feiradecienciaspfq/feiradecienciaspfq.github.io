@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Escola — EEEFM Profª Filomena Quitiba</title>
+    <title>A escola — EEEFM Profª Filomena Quitiba</title>
     <meta name="description" content="Conheça a EEEFM Professora Filomena Quitiba, escola estadual em Piúma-ES, promotora da XLIII Feira de Ciências. Contatos, endereço e informações institucionais.">
     <link rel="icon" href="img/flyer-feira.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Ícones de contato com cores oficiais das marcas */
+        .icon-whatsapp { color: #25d366; }
+        .icon-instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .contact-card-icon {
+            width: 3.25rem; height: 3.25rem;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .contact-card-icon.wpp  { background: rgba(37, 211, 102, 0.12); border: 1.5px solid rgba(37,211,102,0.25); }
+        .contact-card-icon.insta { background: rgba(220, 39, 67, 0.08); border: 1.5px solid rgba(220,39,67,0.2); }
+        .contact-card-icon.link { background: rgba(26, 58, 92, 0.08); border: 1.5px solid rgba(26,58,92,0.2); }
+    </style>
 </head>
 <body>
 
@@ -17,10 +38,10 @@
         <nav>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="edital-interno.html">Edital Interno</a></li>
-                <li><a href="edital-externo.html">Edital Externo</a></li>
+                <li><a href="edital-interno.html">Edital interno</a></li>
+                <li><a href="edital-externo.html">Edital externo</a></li>
                 <li><a href="faq.html">Regras e FAQ</a></li>
-                <li><a href="sobre.html" class="active">A Escola</a></li>
+                <li><a href="sobre.html" class="active">A escola</a></li>
             </ul>
         </nav>
         <button class="hamburger" id="hamburger" aria-label="Abrir menu">
@@ -48,9 +69,8 @@
     <div class="container">
         <div class="grid grid-2 gap-8 items-center">
 
-            <!-- TEXTO INSTITUCIONAL -->
             <div>
-                <h2 class="section-title">Tradição e Inovação no Ensino Público</h2>
+                <h2 class="section-title">Tradição e inovação no ensino público</h2>
                 <p style="color: var(--color-text-muted); margin-bottom: 1rem; line-height: 1.7;">
                     A <strong>EEEFM Professora Filomena Quitiba</strong> é uma das escolas mais tradicionais de Piúma, comprometida com a educação pública de qualidade, o pensamento crítico, a ciência e a inovação tecnológica.
                 </p>
@@ -58,9 +78,10 @@
                     A Feira de Ciências — já em sua <strong>XLIII (43ª) edição</strong> — é o reflexo do esforço contínuo em colocar o estudante como protagonista na construção do conhecimento, integrando escola e comunidade.
                 </p>
 
-                <!-- ENDEREÇO -->
                 <div class="card" style="border-left: 4px solid var(--color-primary); box-shadow: none; background: var(--color-bg-section);">
-                    <h3 style="margin-bottom: 0.75rem; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted);">📍 Endereço</h3>
+                    <h3 style="margin-bottom: 0.75rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted); font-weight: 700;">
+                        <i class="fa-solid fa-location-dot" style="color: var(--color-accent-red);"></i> Endereço
+                    </h3>
                     <p style="color: var(--color-text-main); font-weight: 500; line-height: 1.7;">
                         Rua Elizeu Xavier Nunes, nº 1<br>
                         Centro — Piúma, ES<br>
@@ -69,7 +90,6 @@
                 </div>
             </div>
 
-            <!-- CARD VISUAL -->
             <div>
                 <div style="background: var(--color-bg-dark); border-radius: var(--radius-xl); padding: 2.5rem; text-align: center; box-shadow: var(--shadow-xl);">
                     <div style="font-size: 3rem; margin-bottom: 0.5rem;">🏫</div>
@@ -92,49 +112,55 @@
 <section class="py-16" style="background: var(--color-bg-section);">
     <div class="container">
         <div class="text-center mb-8">
-            <h2 class="section-title" style="border: none; padding: 0; text-align: center;">Entre em Contato</h2>
-            <p class="section-subtitle" style="margin: 0.5rem auto 0; text-align: center;">Canais de atendimento da escola.</p>
+            <h2 style="font-size: 1.9rem; color: var(--color-bg-dark);">Entre em contato</h2>
+            <p style="color: var(--color-text-muted); margin: 0.5rem auto 0;">Canais de atendimento da escola.</p>
         </div>
 
-        <div class="grid grid-2 gap-4" style="max-width: 700px; margin: 0 auto;">
+        <div class="grid grid-2 gap-4" style="max-width: 720px; margin: 0 auto;">
 
             <!-- WhatsApp Secretaria -->
             <a href="https://wa.me/5528992543514" target="_blank" class="contact-card" style="text-decoration: none;">
-                <div class="contact-icon">📱</div>
-                <div>
+                <div class="contact-card-icon wpp">
+                    <i class="fa-brands fa-whatsapp icon-whatsapp" style="font-size: 1.6rem;"></i>
+                </div>
+                <div style="flex: 1;">
                     <div class="contact-label">WhatsApp</div>
                     <div class="contact-value">Secretaria</div>
-                    <div style="font-size: 0.85rem; color: var(--color-text-muted);">(28) 99254-3514</div>
+                    <div style="font-size: 0.82rem; color: var(--color-text-muted);">(28) 99254-3514</div>
                 </div>
-                <div style="margin-left: auto;">
-                    <span class="btn btn-whatsapp" style="padding: 0.4rem 0.875rem; font-size: 0.8rem;">Abrir</span>
-                </div>
+                <span class="btn btn-whatsapp" style="padding: 0.4rem 1rem; font-size: 0.8rem; white-space: nowrap;">
+                    <i class="fa-brands fa-whatsapp"></i> Abrir
+                </span>
             </a>
 
             <!-- Instagram -->
             <a href="https://www.instagram.com/filomenaquitiba/" target="_blank" class="contact-card" style="text-decoration: none;">
-                <div class="contact-icon" style="background: linear-gradient(135deg, rgba(255,99,132,0.12), rgba(149,76,233,0.08));">📸</div>
-                <div>
+                <div class="contact-card-icon insta">
+                    <i class="fa-brands fa-instagram icon-instagram" style="font-size: 1.6rem;"></i>
+                </div>
+                <div style="flex: 1;">
                     <div class="contact-label">Instagram</div>
                     <div class="contact-value">@filomenaquitiba</div>
-                    <div style="font-size: 0.85rem; color: var(--color-text-muted);">Siga-nos!</div>
+                    <div style="font-size: 0.82rem; color: var(--color-text-muted);">Siga-nos!</div>
                 </div>
-                <div style="margin-left: auto;">
-                    <span class="btn btn-outline-dark" style="padding: 0.4rem 0.875rem; font-size: 0.8rem;">Ver perfil</span>
-                </div>
+                <span class="btn btn-outline-dark" style="padding: 0.4rem 1rem; font-size: 0.8rem; white-space: nowrap;">
+                    Ver perfil
+                </span>
             </a>
 
-            <!-- Link de todos os contatos -->
+            <!-- Central de contatos -->
             <a href="https://linkme.bio/contatosfilomena" target="_blank" class="contact-card" style="text-decoration: none; grid-column: 1 / -1;">
-                <div class="contact-icon" style="background: rgba(26,58,92,0.08);">🔗</div>
-                <div>
-                    <div class="contact-label">Todos os canais</div>
+                <div class="contact-card-icon link">
+                    <i class="fa-solid fa-link" style="color: var(--color-bg-dark); font-size: 1.3rem;"></i>
+                </div>
+                <div style="flex: 1;">
+                    <div class="contact-label">Central de contatos</div>
                     <div class="contact-value">linkme.bio/contatosfilomena</div>
-                    <div style="font-size: 0.85rem; color: var(--color-text-muted);">Central de contatos da escola</div>
+                    <div style="font-size: 0.82rem; color: var(--color-text-muted);">Todos os canais de atendimento da escola</div>
                 </div>
-                <div style="margin-left: auto;">
-                    <span class="btn btn-outline-dark" style="padding: 0.4rem 0.875rem; font-size: 0.8rem;">Acessar</span>
-                </div>
+                <span class="btn btn-outline-dark" style="padding: 0.4rem 1rem; font-size: 0.8rem; white-space: nowrap;">
+                    Acessar
+                </span>
             </a>
         </div>
     </div>

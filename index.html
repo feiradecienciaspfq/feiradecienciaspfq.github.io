@@ -6,6 +6,7 @@
     <title>XLIII Feira de Ciências — EEEFM Profª Filomena Quitiba</title>
     <meta name="description" content="Site oficial da XLIII Feira de Ciências Profª Carcília Martha de Souza Rezende. Tema: Futuro Ancestral. 01 e 02 de outubro de 2026, Praça Dona Carmen, Piúma-ES.">
     <link rel="icon" href="img/flyer-feira.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,10 +20,10 @@
         <nav>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html" class="active">Início</a></li>
-                <li><a href="edital-interno.html">Edital Interno</a></li>
-                <li><a href="edital-externo.html">Edital Externo</a></li>
+                <li><a href="edital-interno.html">Edital interno</a></li>
+                <li><a href="edital-externo.html">Edital externo</a></li>
                 <li><a href="faq.html">Regras e FAQ</a></li>
-                <li><a href="sobre.html">A Escola</a></li>
+                <li><a href="sobre.html">A escola</a></li>
             </ul>
         </nav>
         <button class="hamburger" id="hamburger" aria-label="Abrir menu">
@@ -31,20 +32,22 @@
     </div>
 </header>
 
-<!-- ==================== HERO ==================== -->
+<!-- ==================== HERO — imagem sem sobreposição de texto ==================== -->
 <section class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-content">
-        <span class="badge">01 e 02 de Outubro de 2026</span>
-        <h1>XLIII Feira de Ciências<br>Profª Carcília Martha de Souza Rezende</h1>
-        <p class="subtitle">Tema: <strong style="color: var(--color-primary);">"Futuro Ancestral"</strong> &nbsp;|&nbsp; 23ª SNCT: <strong style="color: var(--color-accent);">"Ciência Delas"</strong></p>
-        <p class="location">📍 Praça Dona Carmen &nbsp;·&nbsp; Piúma, ES</p>
-        <div class="flex justify-center gap-4 flex-wrap">
-            <a href="#inscricoes" class="btn btn-primary">Fazer Inscrição</a>
-            <a href="#categorias" class="btn btn-outline">Ver Categorias</a>
-        </div>
+    <div class="hero-img-wrap">
+        <img src="img/flyer-feira.jpg"
+             alt="XLIII Feira de Ciências Profª Carcília Martha de Souza Rezende — Tema: Futuro Ancestral — 01 e 02 de outubro de 2026, Praça Dona Carmen, Piúma-ES">
     </div>
 </section>
+
+<!-- Faixa de ação abaixo do flyer -->
+<div class="hero-cta">
+    <p class="tagline">Inscrições abertas até 18 de setembro de 2026</p>
+    <div class="flex justify-center gap-4 flex-wrap">
+        <a href="#inscricoes" class="btn btn-primary">Fazer inscrição</a>
+        <a href="#categorias" class="btn btn-outline">Ver categorias</a>
+    </div>
+</div>
 
 <!-- ==================== COUNTDOWN ==================== -->
 <section class="countdown-section" id="countdown-section">
@@ -71,17 +74,12 @@
     </div>
 </section>
 
-<!-- ==================== BANNER STRIP ==================== -->
-<div class="banner-strip">
-    <img src="img/banner-horizontal.jpg" alt="XLIII Feira de Ciências — Futuro Ancestral — 01 e 02 de outubro 2026, Praça Dona Carmen">
-</div>
-
 <!-- ==================== CATEGORIAS ==================== -->
 <section id="categorias" class="py-24" style="background: var(--color-bg-light);">
     <div class="container">
         <div class="text-center mb-8">
-            <h2 class="section-title" style="border: none; padding: 0; text-align: center;">Categorias de Participação</h2>
-            <p class="section-subtitle" style="margin: 0.5rem auto 0;">Os projetos devem se enquadrar em uma das 6 categorias abaixo. Banners, maquetes, protótipos, apps e experimentos são bem-vindos.</p>
+            <h2 style="font-size: 1.9rem; color: var(--color-bg-dark);">Categorias de participação</h2>
+            <p style="color: var(--color-text-muted); max-width: 600px; margin: 0.5rem auto 0;">Os projetos devem se enquadrar em uma das 6 categorias abaixo. Banners, maquetes, protótipos, apps e experimentos são bem-vindos.</p>
         </div>
         <div class="grid grid-3">
             <div class="card">
@@ -91,7 +89,7 @@
             </div>
             <div class="card">
                 <div class="card-icon">💻</div>
-                <h3>Tecnologia e Inovação</h3>
+                <h3>Tecnologia e inovação</h3>
                 <p>Aplicativos, robótica, protótipos e soluções tecnológicas para o cotidiano.</p>
             </div>
             <div class="card">
@@ -106,12 +104,12 @@
             </div>
             <div class="card">
                 <div class="card-icon">🔬</div>
-                <h3>Produções Científicas</h3>
+                <h3>Produções científicas</h3>
                 <p>Pesquisas acadêmicas, experimentação e demonstração de fenômenos científicos.</p>
             </div>
             <div class="card">
                 <div class="card-icon">🤝</div>
-                <h3>Diversidade, Equidade e Inclusão</h3>
+                <h3>Diversidade, equidade e inclusão</h3>
                 <p>Tecnologias assistivas e ações que garantem acesso e equidade a todas as pessoas.</p>
             </div>
         </div>
@@ -122,31 +120,31 @@
 <section id="inscricoes" class="py-16" style="background: var(--color-bg-section);">
     <div class="container">
         <div class="text-center mb-8">
-            <h2 class="section-title" style="border: none; padding: 0; text-align: center;">Editais e Inscrições</h2>
-            <p class="section-subtitle" style="margin: 0.5rem auto 0;">Inscrições abertas de <strong>03 de agosto</strong> a <strong>18 de setembro de 2026</strong>. Selecione o seu perfil.</p>
+            <h2 style="font-size: 1.9rem; color: var(--color-bg-dark);">Editais e inscrições</h2>
+            <p style="color: var(--color-text-muted); max-width: 600px; margin: 0.5rem auto 0;">Inscrições abertas de <strong>03 de agosto</strong> a <strong>18 de setembro de 2026</strong>. Selecione o seu perfil.</p>
         </div>
         <div class="grid grid-2">
             <div class="card edital-card">
                 <span class="badge" style="margin-bottom: 0.75rem;">Edital nº 1/2026</span>
-                <h3>👩‍🎓 Sou Aluno da Escola</h3>
+                <h3>👩‍🎓 Sou aluno da escola</h3>
                 <p style="color: var(--color-text-muted); margin-bottom: 1rem; font-size: 0.92rem;">Estudante matriculado na EEEFM Professora Filomena Quitiba participando com seu grupo de colegas.</p>
                 <ul class="checklist">
                     <li>Edital 1/2026 — regras internas</li>
                     <li>Formulário de inscrição exclusivo</li>
                     <li>Critérios de avaliação específicos</li>
                 </ul>
-                <a href="edital-interno.html" class="btn btn-primary" style="width: 100%;">Acessar Edital Interno</a>
+                <a href="edital-interno.html" class="btn btn-primary" style="width: 100%;">Acessar edital interno</a>
             </div>
             <div class="card edital-card externo">
                 <span class="badge badge-teal" style="margin-bottom: 0.75rem;">Edital nº 02/2026</span>
-                <h3>🏫 Sou de Outra Instituição</h3>
+                <h3>🏫 Sou de outra instituição</h3>
                 <p style="color: var(--color-text-muted); margin-bottom: 1rem; font-size: 0.92rem;">Escola pública ou privada, ou outra instituição de ensino convidada a participar da feira.</p>
                 <ul class="checklist">
                     <li>Edital 2/2026 — participação externa</li>
                     <li>Formulário de inscrição externo</li>
                     <li>Critérios de avaliação específicos</li>
                 </ul>
-                <a href="edital-externo.html" class="btn btn-primary" style="width: 100%; background: var(--color-accent); border-color: var(--color-accent);">Acessar Edital Externo</a>
+                <a href="edital-externo.html" class="btn btn-primary" style="width: 100%; background: var(--color-accent); border-color: var(--color-accent);">Acessar edital externo</a>
             </div>
         </div>
     </div>
@@ -167,18 +165,18 @@
                 <div>
                     <h4>Páginas</h4>
                     <ul>
-                        <li><a href="edital-interno.html">Edital Interno</a></li>
-                        <li><a href="edital-externo.html">Edital Externo</a></li>
+                        <li><a href="edital-interno.html">Edital interno</a></li>
+                        <li><a href="edital-externo.html">Edital externo</a></li>
                         <li><a href="faq.html">Regras e FAQ</a></li>
-                        <li><a href="sobre.html">A Escola</a></li>
+                        <li><a href="sobre.html">A escola</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4>Contato</h4>
                     <ul>
-                        <li><a href="https://wa.me/5528992543514" target="_blank">📱 WhatsApp Secretaria</a></li>
-                        <li><a href="https://www.instagram.com/filomenaquitiba/" target="_blank">📸 @filomenaquitiba</a></li>
-                        <li><a href="https://linkme.bio/contatosfilomena" target="_blank">🔗 Todos os contatos</a></li>
+                        <li><a href="https://wa.me/5528992543514" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp da secretaria</a></li>
+                        <li><a href="https://www.instagram.com/filomenaquitiba/" target="_blank"><i class="fa-brands fa-instagram"></i> @filomenaquitiba</a></li>
+                        <li><a href="https://linkme.bio/contatosfilomena" target="_blank"><i class="fa-solid fa-link"></i> Todos os contatos</a></li>
                     </ul>
                 </div>
             </div>
