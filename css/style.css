@@ -157,7 +157,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .hero-img-wrap {
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .hero-img-wrap img {
@@ -193,11 +193,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .banner-strip img {
   width: 100%;
-  height: auto;           /* proporcional — sem corte */
-  max-height: 260px;
-  object-fit: contain;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
   display: block;
-  margin: 0 auto;
 }
 
 /* =============================================
